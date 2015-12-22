@@ -1,0 +1,98 @@
+<html>
+<body bgcolor="#87CEEB">
+<p>The application D/L calculator, calculates Duckworth-Lewis <nobr>(D/L)</nobr> par scores and targets for rain-interrupted limited-overs cricket
+matches. The 'Standard Edition' of the <nobr>D/L</nobr> method, described on the <a
+href="http://www.icc-cricket.com/cricket-rules-and-regulations">ICC website</a>, is used.</p>
+<p>Please note that this is not the same as the 'D/L/S' that is used in international matches
+and domestic matches between first-class teams after November-2014. Use of the D/L/S requires proprietary software which
+is not yet available to the general public (see FAQ 2 in the ICC FAQs. However, this application will provide a good indicator
+of the state of play in a match, and the Standard Edition is also valid in professional matches where the
+D/L/S software is not available.</p>
+
+<h2>How to use</h2>
+<p>When you open th application, first page indicate team 1.Team 1 is the team which bats first. In the Innings 1 page, two pieces of information are required:</p>
+<ul>
+<li>The overs available to Team 1 at the start of its innings
+<ul>
+<li>The maximum number of overs permitted is 50</li>
+<li>This may be less than the number of overs originally scheduled, if a rain interruption occurred before the start
+of the match</li>
+</ul><br>
+<li>Team 1's final score</li>
+<ul>
+<li>The number of wickets in hand at the end of the innings is not used in the calculation</li>
+</ul>
+</ul>
+<p>The rain could interrupt the match in middle of a inning. Click <a href="interruptions.html">Add interruption</a><</p>
+
+<h2>Innings 2</h2>
+<p>To generate a target for Team 2 to score in their innings, only one piece of information is required:</p>
+<ul>
+<li>The number of overs available to Team 2 at the start of its innings</li>
+<ul>
+<li>This also cannot be greater than 50</li>
+<li>By default, this is assumed to be 50
+</ul>
+</ul>
+<p>The rain could again interrupt the match in middle of a inning. Click <a href="interruptions.html">Add interruption</a><</p>
+
+<p>If Team 2's innings has started, and you wish to calculate the par score for the current stage in the game (e.g.
+    to see which team would win if the match were abandoned now), two further pieces of information are required:</p>
+<ul>
+    <li>The number of overs played so far by Team 2</li>
+    <ul>
+        <li>This can be a whole number of overs, or can include part of an over
+        <li>Enter part overs using the standard notation - i.e. 42.4 overs means 42 overs, 4 balls</li>
+        <li>If not specified, this will adjust itself by adding all overs played in antecedent interruption</li>
+    </ul><br>
+    <li>The number of wickets lost so far by Team 2</li>
+    <ul>
+        <li>If not specified, this will adjust itself to wicket lost till last interruptions
+    </ul>
+</ul>
+<p>Press 'Calculate' to calculate Team 2's revised target and par score.</p>
+
+<p>When you press 'Calculate', the current par score will be shown above the target for the innings. If the match
+were to be abandoned at this stage, if Team 2's score equalled the par score, the match would be tied. If Team 2's
+score beats the par score, Team 2 wins. If it is lower than the par score, Team 1 wins.</p>
+<p>Then click 'Generate Par Table' button which will populate a table which indicates how the par score with
+increase in subsequent overs, and how it would increase if further wickets are lost.</p>
+
+<h3>Example</h3>
+<p>Team 1 has 50 overs and scores 248. Then, a rain interruption during the innings break means that Team 2 will only
+have 40 overs in their innings. Enter this information:
+<ul>
+<li>Innings 1 </li>
+<ul>
+<li>Overs available at start: 50</li>
+<li>Team 1 final score: 248</li>
+</ul>
+<li>Innings 2 </li>
+<ul>
+<li>Overs available at start: 38</li>
+</ul>
+</ul>
+<p>then press 'Calculate'. This shows that the target, off 38 overs, is 216.</p>
+<p>If Team 2 have batted 10.3 overs, and have lost 2 wickets,but rain hav interrupted the game which made lost of 5 overs then add the following information by clicking interrptions</p>
+<ul>
+<li>Interruptios</li>
+<ul>
+<li>overs played: 10.3</li>
+<li>Wickets lost: 2</li>
+<li>overs lost: 5</li>
+<p>then press 'done' button</p>
+</ul>
+</ul>
+<p>Press 'Calculate'. The par score at 10.3 overs at lost of 2 wickects is 56.</p>
+<p>The 'Generate Par Tale' tab will show that at the end of the previous over (the 10th), the par score was 56/2. At the end of this
+over, the par score rises to 58/2 (and then 62/2 off 12 overs). If Team 2 loses another wicket, then at the end of
+the 11th over the par score is 67/3.</p>
+
+<h2>Developed by</h2>
+<ul>
+<li>Bhavani K(bhavani0815@gmail.com)</li>
+<li>Dhirain Jain(dhirainj@gmail.com)</li>
+
+</ul>
+</body>
+</html>

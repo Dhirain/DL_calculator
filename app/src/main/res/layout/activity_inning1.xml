@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Inning1"
+    android:id="@+id/id_innings1_rl"
+    android:focusableInTouchMode="true"
+    android:background="#87CEEB">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Overs available at innings start"
+        android:id="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/id_inningSartOver"
+        android:layout_toStartOf="@+id/id_inningSartOver"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_inningSartOver"
+        android:background="#ffffffff"
+        android:width="55dip"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:layout_alignStart="@+id/id_team1FS"
+        android:layout_alignLeft="@+id/id_team1FS"
+        android:layout_alignBottom="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add interruption"
+        android:id="@+id/addInteruptionButton"
+        android:onClick="onClick"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/interuptionDetails"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Innings 2"
+        android:id="@+id/innings2Button"
+        android:onClick="onClickInnings2"
+        android:layout_below="@+id/interuptionDetails"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Team 1 Score:"
+        android:id="@+id/id_finalScore1"
+        android:layout_above="@+id/interuptionDetails"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+      <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_team1FS"
+          android:background="#ffffffff"
+        android:width="55dip"
+        android:digits="0123456789"
+          android:maxLength="3"
+        android:inputType="numberDecimal"
+          android:layout_alignBottom="@+id/id_finalScore1"
+          android:layout_alignRight="@+id/innings2Button"
+          android:layout_alignEnd="@+id/innings2Button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_alignBottom="@+id/id_team1FS"
+        android:layout_toRightOf="@+id/id_finalScore1"
+        android:layout_toEndOf="@+id/id_finalScore1" />
+
+</RelativeLayout>

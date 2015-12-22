@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">D/L calculator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="aboutUs">How to use</string>
+    <string name="dl">About D/L</string>
+    <string name="exit">EXIT</string>
+    <string name="title_activity_interruptions">Interruptions</string>
+    <string name="title_activity_innings2">Innings2</string>
+    <string name="title_activity_interruptions2">Interruptions2</string>
+    <string name="title_activity_par_table_generator">ParTableGenerator</string>
+    <string name="Inning1">First innings</string>
+    <string name="Inning2">Second innings</string>
+    <string name="inning2_over_start">Overs available at inning2 start</string>
+    <string name="title_activity_dl">About D/L</string>
+    <string name="title_activity_about_app">How to use</string>
+    <string name="innnnig2">Innings 2</string>
+</resources>

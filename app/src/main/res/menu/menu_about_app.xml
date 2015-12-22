@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.bhavani.dhirain.dl.aboutApp">
+
+
+       <!-- <item
+            android:id="@+id/exit1"
+            android:orderInCategory="1"
+            android:title="@string/exit"
+            app:showAsAction="ifRoom|withText"/>
+-->
+        <item
+            android:id="@+id/about"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            android:title="@string/aboutUs"
+            />
+
+        <item
+            android:id="@+id/dl"
+            android:orderInCategory="2"
+            android:title="@string/dl"
+            app:showAsAction="never" />
+
+
+</menu>

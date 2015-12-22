@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="com.bhavani.dhirain.dl.dl"
+    android:background="#87CEEB"
+    android:id="@+id/id_dl_activity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The Duckworth–Lewis method is a mathematical formulation designed to calculate the target score for the team batting second in a limited overs cricket match interrupted by weather or other circumstances. It is generally accepted to be the most accurate method of setting a target score.
+        The basic principle is that each team in a limited-overs match has two resources available with which to score runs: wickets remaining, and overs to play. Where overs are lost, setting an adjusted target for the team batting second is not as simple as reducing the run target proportionally to the loss in overs, because a team with ten wickets in hand and 25 overs to bat can be expected to play more aggressively than if they had ten wickets and a full 50 overs, for example, and can consequently achieve a higher run rate. The Duckworth–Lewis method is an attempt to set a statistically fair target for the second teams innings, based on the score achieved by the first team, taking their wickets lost and overs played into account.The D/L method is not in direct proportion to the number of overs available to be faced, as with the average run rate method of correction. Instead they depend on how many overs are to go and how many wickets are down when the interruptions occur. "
+        android:id="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scrollbars = "vertical"/>
+</ScrollView>
+</RelativeLayout>
